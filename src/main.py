@@ -26,9 +26,6 @@ nationality_input.send_keys(entry['Nationality'])
 email_input = driver.find_element_by_name('email')
 email_input.send_keys(entry['Email'])
 
-gender_xpath = f"//input[@name='gender'][@value='{entry['Gender']}']"
-gender_input = driver.find_element_by_xpath(gender_xpath)
-gender_input.click()
 
 visa_xpath = "/html/body/div/div/form/div[1]/div[4]/button"
 visaType_select = Select(driver.find_element_by_xpath(visa_xpath))
